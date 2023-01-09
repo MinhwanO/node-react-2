@@ -22,7 +22,7 @@ app.use(cookieParser())
 
 // 몽고db 연결
 mongoose
-    .connect(config.mongoURI)
+    .connect('mongodb+srv://minhwan:a12345@cluster0.mi9fstm.mongodb.net/?retryWrites=true&w=majority')
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err))
 
